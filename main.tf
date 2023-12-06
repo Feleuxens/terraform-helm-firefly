@@ -37,7 +37,7 @@ resource "helm_release" "firefly" {
     value = random_password.token.result
   }
 
-  depends_on = [kubernetes_namespace.firefly-db]
+  depends_on = [helm_release.helm_release.firefly-db]
 }
 
 resource "random_password" "token" {
