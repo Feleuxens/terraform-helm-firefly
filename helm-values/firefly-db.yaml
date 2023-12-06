@@ -1,0 +1,10 @@
+fullnameOverride: firefly-db
+  
+backup:
+  # There are two possible backup destinations currently implemented, http and pvc
+  destination: pvc
+
+configs:
+  TZ: Europe/Berlin
+
+backupSchedule: "0 3 * * *"
