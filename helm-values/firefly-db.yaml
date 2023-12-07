@@ -1,3 +1,5 @@
+fullnameOverride: firefly-db
+
 image:
   repository: postgres
   tag: 13-alpine
