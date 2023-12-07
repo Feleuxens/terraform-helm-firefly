@@ -1,5 +1,10 @@
 fullnameOverride: firefly-db
-  
+
+image:
+  repository: postgres
+  tag: 13-alpine
+  pullPolicy: Always
+
 backup:
   # There are two possible backup destinations currently implemented, http and pvc
   destination: pvc
