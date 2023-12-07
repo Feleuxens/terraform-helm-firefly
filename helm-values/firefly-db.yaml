@@ -8,6 +8,16 @@ backup:
   destination: pvc
 
 configs:
+  RESTORE_URL: ""
+  BACKUP_URL: ""
+  PGPASSWORD: ""
+  DBHOST: firefly-db
+  DBPORT: "5432"
+  DBNAME: firefly
+  DBUSER: firefly
   TZ: Europe/Berlin
+  POSTGRES_HOST_AUTH_METHOD: trust
+  POSTGRES_USER: firefly
+  POSTGRES_PASSWORD: ""
 
 backupSchedule: "0 3 * * *"

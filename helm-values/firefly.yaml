@@ -20,7 +20,15 @@ cronjob:
 
 config:
   env:
+    DB_CONNECTION: pgsql
+    DB_PORT: "5432"
+    DB_DATABASE: firefly
+    DB_USERNAME: firefly
+    DB_HOST: firefly-db
+    DEFAULT_LANGUAGE: "en_US"
+    DEFAULT_LOCALE: "equal"
     TZ: "Europe/Berlin"
+    TRUSTED_PROXIES: "**"
 
 ingress:
   enabled: true
