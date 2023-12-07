@@ -20,7 +20,6 @@ cronjob:
 
 config:
   env:
-    DB_HOST: firefly-db
     TZ: "Europe/Berlin"
 
 ingress:
