@@ -20,6 +20,7 @@ cronjob:
 
 config:
   env:
+    DB_HOST: firefly-db
     TZ: "Europe/Berlin"
 
 ingress:
@@ -30,9 +31,9 @@ ingress:
   hosts:
     - firefly.${domain}
   tls:
-   - secretName: firefly-tls
-     hosts:
-       - firefly.${domain}
+    - secretName: firefly-tls
+      hosts:
+        - firefly.${domain}
 
 resources:
   requests:

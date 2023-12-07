@@ -5,20 +5,20 @@ variable "domain" {
 
 variable "firefly_app_key" {
   description = "Firefly App Key"
-  type = string
+  type        = string
 }
 
 variable "cpu_request" {
-  type = string
+  type    = string
   default = "10m"
 }
 
 variable "memory_request" {
-  type = string
+  type    = string
   default = "256Mi"
 }
 
 variable "memory_limit" {
-  type = string
+  type    = string
   default = "512Mi"
 }

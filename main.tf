@@ -33,7 +33,7 @@ resource "helm_release" "firefly" {
     value = var.firefly_app_key
   }
   set_sensitive {
-    name = "cronjob.auth.token"
+    name  = "cronjob.auth.token"
     value = random_password.token.result
   }
 
@@ -43,5 +43,5 @@ resource "helm_release" "firefly" {
 resource "random_password" "token" {
   length           = 32
   special          = true
-  override_special = "!#$%&*()-_=+[]{}<>:?"
+  override_special = "!#$%&*()-_=+{}<>:?"
 }
