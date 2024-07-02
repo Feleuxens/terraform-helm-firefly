@@ -3,7 +3,7 @@ resource "helm_release" "firefly-db" {
 
   repository       = "https://firefly-iii.github.io/kubernetes"
   chart            = "firefly-db"
-  version          = "0.2.1"
+  version          = "0.2.2"
   create_namespace = true
   namespace        = "firefly"
 
